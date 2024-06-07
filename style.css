@@ -1,0 +1,137 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/1155149.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s;
+  min-height: 50%;
+}
+
+.container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#todo-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-todo-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#add-todo-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#todo-list {
+  list-style: none;
+  min-height: 80%;
+  max-height: 100%;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align items at the start */
+  align-items: flex-start; /* Align items at the start */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+.todo-item h4 {
+  flex: 1;
+  margin: 0;
+  padding-right: 10px;
+  font-size: 16px;
+}
+
+.todo-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.markdone-button {
+  color: green;
+  transition: color 0.3s;
+}
+
+.markdone-button:hover {
+  color: darkgreen;
+}
+
+.delete-button {
+  color: red;
+  transition: color 0.3s;
+}
+
+.delete-button:hover {
+  color: darkred;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+#record-todo-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#record-todo-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
